@@ -1,0 +1,33 @@
+{
+	"items": [
+	{
+	"sys": {"id":"1"},
+	"fields": {
+	"menu": "Indomie Goreng Beef Steak",
+	"harga": 15.000
+	}
+	},
+	{
+	"sys": {"id":"2"},
+	"fields": {
+	"menu": "Indomie Goreng Klasik",
+	"harga": 15.000
+	}
+	},
+	{
+	"sys": {"id":"3"},
+	"fields": {
+	"menu": "Martabak Mie",
+	"harga": 15.000
+	}
+	},
+	{
+	"sys": {"id":"4"},
+	"fields": {
+	"menu": "Roti Bakar Singkong Keju",
+	"harga": 15.000
+	}
+	},
+
+]
+}

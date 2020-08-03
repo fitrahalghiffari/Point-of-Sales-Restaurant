@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home | Point of sales</title>
+
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 70%;
+  height: 750px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 30%;
+  background-color: #f1f1f1;
+  height: 750px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h5 {
+  text-align: right;
+}
+
+.bag-btn {
+  position: absolute;
+  top :70;
+}
+
+div.gallery {
+    margin: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 200px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 25px;
+    text-align: center;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+.cart-btn{
+  position: relative;
+  cursor: pointer;
+}
+
+.cart-items {
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 1fr auto;
+  grid-column-gap: 1.5rem;
+  margin: 1.5rem 0;
+ }
+
+input[type=button] {
+  background-color: #4CAF50;
+  position: center;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: center;
+  margin: 9px 2px;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<!-- <header>
+  <h2>Point of sales</h2>
+</header> -->
+
+<section>
+  <nav>
+ 
+      <center>
+          <div class="gallery">
+        <a target="_blank" href="images/indomie goreng beef steak.jpg">
+          <img src="images/indomie goreng beef steak.jpg" alt="Trolltunga Norway" width="300" height="200">
+        </a>
+        <div width="50px" class="desc">Indomie Goreng Beef Steak</div>
+        <!-- <button class="bag-btn" data-id="1">
+          <i class="fas fa-shopping-cart"></i> buy
+        </button> -->
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/indomie goreng klasik.jpg">
+          <img src="images/indomie goreng klasik.jpg" alt="Forest" width="600" height="400"> 
+        </a>
+        <div class="desc">Indomie Goreng Klasik</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/martabak mie.jpg">
+          <img src="images/martabak mie.jpg" alt="Northern Lights" width="600" height="400">
+        </a>
+        <div class="desc">Martabak Mie</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/ROTI BAKAR.jpg">
+          <img src="images/ROTI BAKAR.jpg" alt="Mountains" width="600" height="400">
+        </a>
+        <div class="desc">Roti Bakar Singkong Keju</div>
+      </div>
+      <div class="gallery">
+        <a target="_blank" href="images/indomie goreng beef steak.jpg">
+          <img src="images/indomie goreng beef steak.jpg" alt="Trolltunga Norway" width="300" height="200">
+        </a>
+        <div width="50px" class="desc">Indomie Goreng Beef Steak</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/indomie goreng klasik.jpg">
+          <img src="images/indomie goreng klasik.jpg" alt="Forest" width="600" height="400">
+        </a>
+        <div class="desc">Indomie Goreng Klasik</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/martabak mie.jpg">
+          <img src="images/martabak mie.jpg" alt="Northern Lights" width="600" height="400">
+        </a>
+        <div class="desc">Martabak Mie</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/ROTI BAKAR.jpg">
+          <img src="images/ROTI BAKAR.jpg" alt="Mountains" width="600" height="400">
+        </a>
+        <div class="desc">Roti Bakar Singkong Keju</div>
+      </div>
+      <div class="gallery">
+        <a target="_blank" href="images/indomie goreng beef steak.jpg">
+          <img src="images/indomie goreng beef steak.jpg" alt="Trolltunga Norway" width="300" height="200">
+        </a>
+        <div width="50px" class="desc">Indomie Goreng Beef Steak</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/indomie goreng klasik.jpg">
+          <img src="images/indomie goreng klasik.jpg" alt="Forest" width="600" height="400">
+        </a>
+        <div class="desc">Indomie Goreng Klasik</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/martabak mie.jpg">
+          <img src="images/martabak mie.jpg" alt="Northern Lights" width="600" height="400">
+        </a>
+        <div class="desc">Martabak Mie</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/ROTI BAKAR.jpg">
+          <img src="images/ROTI BAKAR.jpg" alt="Mountains" width="600" height="400">
+        </a>
+        <div class="desc">Roti Bakar Singkong Keju</div>
+      </div>
+      <div class="cart-items">0</div> 
+      </center>
+
+  </nav>
+  
+  <article>
+    <h3>New Customer</h3>
+    <p id="demo"></p>
+
+    <script>
+    var x = 5;    // Declare x, give it the value of 5
+    var x = 5;    // Declare x, give it the value of 5
+    var x = 5;    // Declare x, give it the value of 5
+    var x = 5;    // Declare x, give it the value of 5
+    var y = x + 2;  // Declare y, give it the value of x + 2 
+    // Write y to demo:
+    document.getElementById("demo").innerHTML = y;
+    </script>
+
+    <div class="cart-item">
+      <div>
+        <h4>Indomie Goreng Beef Steak</h4>
+        <h5>Rp. 15.000</h5>
+      </div>
+    </div>
+
+    <div class="cart-footer">  
+      <h1>Sub-total: <span class="cartSubtotal">0</span></h1>
+      <h1>Total : <span class="cartTotal">0</span></h1>
+      <input type="button" value="clear cart" class="clear-cart banner-btn"></button>
+
+      <br>
+      <input type="button" value="save bill" class="cart-save banner-btn"></button>
+      <input type="button" value="charge" class="cart-total banner-btn"></button>
+
+
+
+
+<!--     <button onclick="getElementById('demo').innerHTML=Date()">What is the time?</button> -->
+  </article>
+
+
+</section>
+
+
+</body>
+</html>
